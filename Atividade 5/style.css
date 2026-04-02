@@ -1,0 +1,60 @@
+/* Configuração Geral da DIV */
+.caixa-colorida {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Esconde todos os textos por padrão */
+h2 span {
+    display: none;
+}
+
+/* --- REGRAS DE MEDIA QUERIES --- */
+
+/* Até 420px: CINZA */
+@media (max-width: 420px) {
+    .caixa-colorida { background-color: gray; }
+    .txt-cinza { display: inline; }
+}
+
+/* Maior que 420px até 768px: LARANJA */
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa-colorida { background-color: orange; }
+    .txt-laranja { display: inline; }
+}
+
+/* Maior que 768px até 1024px: ROSA */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa-colorida { background-color: magenta; }
+    .txt-rosa { display: inline; }
+}
+
+/* Maior que 1024px até 1080px: VERMELHO */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa-colorida { background-color: red; color: white; }
+    .txt-vermelho { display: inline; }
+}
+
+/* Maior que 1080px até 1366px: ROXO */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa-colorida { background-color: blueviolet; color: white; }
+    .txt-roxo { display: inline; }
+}
+
+/* Maior que 1366px até 1920px: AMARELO */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa-colorida { background-color: yellow; color: black; }
+    .txt-amarelo { display: inline; }
+}
+
+/* Maior que 1920px: VERDE */
+@media (min-width: 1921px) {
+    .caixa-colorida { background-color: green; color: white; }
+    .txt-verde { display: inline; }
+}
