@@ -1,0 +1,32 @@
+body {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.content {
+    padding: 30px 20vw;
+}
+
+table,
+th,
+td {
+    /* Mudei a borda de branco para verde para combinar com o tema */
+    border: 2px solid green; 
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px 15px;
+}
+
+th {
+    /* Fundo verde com texto dourado */
+    background-color: green;
+    color: gold;
+}
+
+tr:nth-child(even) {
+    /* Um tom de dourado bem claro para as linhas pares, substituindo o lightgray */
+    background-color: #fdf5e6; 
+}
