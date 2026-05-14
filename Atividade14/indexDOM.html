@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Maiúsculas e Minúsculas</title>
+    <script>
+        function transformarTexto() {
+            let campoTexto = document.forms.formularioTexto.elements.idTexto;
+            
+            let radioMaiuscula = document.getElementById("radMaiuscula");
+            let radioMinuscula = document.getElementById("radMinuscula");
+
+            if (radioMaiuscula.checked) {
+                campoTexto.value = campoTexto.value.toUpperCase();
+            } else if (radioMinuscula.checked) {
+                campoTexto.value = campoTexto.value.toLowerCase();
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formatador de Texto</h2>
+        
+        <form name="formularioTexto" id="formularioTexto">
+            <label for="idTexto">Digite seu texto aqui:</label><br><br>
+            <input name="idTexto" type="text" id="idTexto" placeholder="Escreva algo...">
+            
+            <br>
+            
+            <input type="radio" name="opcaoFormato" id="radMaiuscula" value="maiuscula" onclick="transformarTexto()">
+            <label for="radMaiuscula">Tudo Maiúsculo</label>
+            
+            <br>
+            
+            <input type="radio" name="opcaoFormato" id="radMinuscula" value="minuscula" onclick="transformarTexto()">
+            <label for="radMinuscula">Tudo Minúsculo</label>
+        </form>
+    </div>
+
+</body>
+</html>
