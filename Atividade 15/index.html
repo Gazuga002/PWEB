@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15 - Validação de Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <h2>Formulário Principal</h2>
+        
+        <form name="formularioPrincipal" id="formularioPrincipal" onsubmit="return validar()">
+            
+            <div class="form-group">
+                <label for="idNome">Nome:</label>
+                <input type="text" name="idNome" id="idNome">
+            </div>
+
+            <div class="form-group">
+                <label for="idEmail">E-mail:</label>
+                <input type="email" name="idEmail" id="idEmail">
+            </div>
+
+            <div class="form-group">
+                <label for="idComentario">Comentário:</label>
+                <textarea name="idComentario" id="idComentario" rows="5"></textarea>
+            </div>
+
+            <div class="form-group-radio">
+                <p class="pesquisa-titulo">Pesquisa:</p>
+                <p class="pesquisa-subtitulo">Primeira vez nesta página?</p>
+                
+                <div class="radio-options">
+                    <input type="radio" name="opcaoPesquisa" id="radSim" value="Sim">
+                    <label for="radSim">Sim</label>
+                    
+                    <input type="radio" name="opcaoPesquisa" id="radNao" value="Não">
+                    <label for="radNao">Não</label>
+                </div>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="FormularioValidar.js"></script>
+</body>
+</html>
